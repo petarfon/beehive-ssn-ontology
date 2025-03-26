@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#"
+     xml:base="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:bhssn="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/SystemsLite.owl"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/petar/ontologies/2025/0/bees-ontology-v21"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#initiates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#initiates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#isOwnedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#isOwnedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#owns"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#isReceivedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#isReceivedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#notifies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#notifies"/>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#owns"/>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#uploadsDataTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#uploadsDataTo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Alert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Alert">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#CloudPlatform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#CloudPlatform">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Non-RelationalDB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Non-RelationalDB">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#RelationalDB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#RelationalDB">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#DataStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Service">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#Code"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn/Climate_Property -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn/Climate_Property">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn/Environmental_Property -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn/Environmental_Property">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn/Internal_Hive_Property -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn/Internal_Hive_Property">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn/Location_Data_Property -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn/Location_Data_Property">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#AWS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#AWS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#CloudPlatform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#AnalyticsAPI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#AnalyticsAPI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Arduino01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Arduino01">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#ClientAPI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#ClientAPI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#ConfigurationAPI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#ConfigurationAPI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#HiveDB01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#HiveDB01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Non-RelationalDB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#RaspberryPi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#RaspberryPi">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#ServerAPI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#ServerAPI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Smartphone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Smartphone">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#WebService -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#WebService">
+        <rdf:type rdf:resource="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Service"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#climateConditions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#climateConditions">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/Stimulus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#2024-01-27_14:27:05:09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#2024-01-27_14:27:05:09">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#2024-01-27_14:27:05:12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#2024-01-27_14:27:05:12">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#AWS/001/deployment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#AWS/001/deployment">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#DHT22/1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#DHT22/1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#beekeepers/01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#beekeepers/01">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#hive/001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#hive/001">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#hive/001/deployment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#hive/001/deployment">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/Deployment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#observation/21133 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#observation/21133">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#observation/21133/result -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#observation/21133/result">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#procedure/dataCollectionRate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#procedure/dataCollectionRate">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#procedure/dataFusion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#procedure/dataFusion">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#warning/type/01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#warning/type/01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/petar/ontologies/2025/0/beehive-ssn#Alert"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
